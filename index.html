@@ -1,484 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>GCT College App - Testing Guide</title>
-		<style>
-			:root {
-				--primary-color: #2563eb;
-				--secondary-color: #1e40af;
-				--accent-color: #3b82f6;
-				--success-color: #059669;
-				--warning-color: #d97706;
-				--danger-color: #dc2626;
-				--text-primary: #1f2937;
-				--text-secondary: #6b7280;
-				--bg-primary: #ffffff;
-				--bg-secondary: #f8fafc;
-				--bg-tertiary: #e2e8f0;
-				--border-color: #e5e7eb;
-				--shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-					0 2px 4px -1px rgba(0, 0, 0, 0.06);
-				--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-					0 4px 6px -2px rgba(0, 0, 0, 0.05);
-			}
+<head>
+  <meta charset="UTF-8">
+  <title>GCT College App - Testing Guide</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      background: #f9fafb;
+      color: #2d3748;
+    }
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    h1, h2, h3 {
+      color: #1a202c;
+      margin-top: 1.5em;
+    }
+    h1 { font-size: 2em; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.3em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.2em; margin-top: 1em; }
+    ul, ol { margin-left: 20px; }
+    .section { margin-bottom: 30px; }
 
-			* {
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
-			}
+    /* Code blocks with copy button */
+    .feedback-block {
+      position: relative;
+      background: #f4f6f8;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 12px;
+      margin: 12px 0;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: #3182ce;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      font-size: 0.8em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .copy-btn:hover { background: #2b6cb0; }
+    .accordion {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      margin: 10px 0;
+      overflow: hidden;
+    }
+    .accordion summary {
+      cursor: pointer;
+      padding: 12px 16px;
+      background: #edf2f7;
+      font-weight: bold;
+    }
+    .accordion summary:hover {
+      background: #e2e8f0;
+    }
+    .accordion[open] summary {
+      background: #e2e8f0;
+    }
+    .accordion-content {
+      padding: 10px 16px;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>GCT College App - Testing Guide</h1>
+    <p>This guide explains exactly what you need to do over the next 14 days.</p>
+    <p><strong>Important:</strong> You need to submit feedback exactly 3 times - on Day 1, Day 6, and Day 11.</p>
 
-			body {
-				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-				line-height: 1.7;
-				color: var(--text-primary);
-				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-				min-height: 100vh;
-				padding: 20px;
-			}
+    <div class="section">
+      <h2>How to Join the Test</h2>
+      <ol>
+        <li><strong>Click the opt-in link</strong> you received → Tap "Join the test"</li>
+        <li><strong>Open Google Play Store</strong> → Find "GCT College App"</li>
+        <li><strong>Install the app</strong> on your phone</li>
+        <li><strong>Open the app daily</strong> for the next 14 days</li>
+      </ol>
+    </div>
 
-			.container {
-				max-width: 1000px;
-				margin: 0 auto;
-				background: var(--bg-primary);
-				border-radius: 16px;
-				box-shadow: var(--shadow-lg);
-				overflow: hidden;
-			}
+    <div class="section">
+      <h2>How to Submit Feedback in Play Store</h2>
+      <p><strong>Very Important:</strong> You must submit feedback through Google Play Store private feedback.</p>
+      <h3>Steps to Submit Feedback:</h3>
+      <ol>
+        <li>Open <strong>Google Play Store</strong></li>
+        <li>Go to the app page</li>
+        <li><strong>Scroll down</strong> until you see <strong>"Private feedback to developer"</strong></li>
+        <li>Tap it</li>
+        <li><strong>Copy and paste</strong> the exact message I give you</li>
+        <li>Tap <strong>Send</strong></li>
+      </ol>
+    </div>
 
-			.header {
-				background: linear-gradient(
-					135deg,
-					var(--primary-color) 0%,
-					var(--secondary-color) 100%
-				);
-				color: white;
-				padding: 40px 30px;
-				text-align: center;
-			}
+    <div class="section">
+      <h2>What You Need to Do Each Day</h2>
+      <h3>DAY 1 - First Test</h3>
+      <ul>
+        <li>✅ <strong>Install the app and test it</strong></li>
+        <li>✅ <strong>Submit Day-1 feedback</strong> (copy the exact message I give you)</li>
+      </ul>
+      <h3>DAYS 2-5</h3>
+      <ul><li>✅ Just open the app once daily - no feedback needed</li></ul>
+      <h3>DAY 6 - Second Test</h3>
+      <ul>
+        <li>✅ Update the app when I tell you</li>
+        <li>✅ Submit Day-6 feedback</li>
+      </ul>
+      <h3>DAYS 7-10</h3>
+      <ul><li>✅ Just open the app once daily - no feedback needed</li></ul>
+      <h3>DAY 11 - Final Test</h3>
+      <ul>
+        <li>✅ Update the app when I tell you</li>
+        <li>✅ Submit Day-11 feedback</li>
+      </ul>
+      <h3>DAYS 12-14</h3>
+      <ul><li>✅ Just open the app once daily - no feedback needed</li></ul>
+    </div>
 
-			.header h1 {
-				font-size: 2.5rem;
-				font-weight: 700;
-				margin-bottom: 10px;
-				text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-			}
+    <div class="section">
+      <h2>Your Exact Feedback Messages</h2>
+      <p><strong>IMPORTANT:</strong> Copy and paste these messages exactly as written (only change the device name). Each tester gets a specific message.</p>
 
-			.header p {
-				font-size: 1.1rem;
-				opacity: 0.9;
-				font-weight: 300;
-			}
+      <details class="accordion">
+        <summary>Day 1 Feedback Messages</summary>
+        <div class="accordion-content">
+          <div class="feedback-block">
+            Day1 - Installed GCT College app and completed registration. Browsed academic programs successfully. App startup took ~4 seconds. Device: Samsung A12 / Android 11.
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <!-- Repeat blocks for T2–T14 -->
+        </div>
+      </details>
 
-			.content {
-				padding: 40px 30px;
-			}
+      <details class="accordion">
+        <summary>Day 6 Feedback Messages (After App Update)</summary>
+        <div class="accordion-content">
+          <div class="feedback-block">
+            Day6 - Updated to v1.0.1. App startup noticeably faster (~2.5s). Navigation smoother. Good improvement.
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <!-- Repeat blocks for T2–T14 -->
+        </div>
+      </details>
 
-			h1,
-			h2,
-			h3 {
-				color: var(--text-primary);
-				margin-bottom: 16px;
-			}
+      <details class="accordion">
+        <summary>Day 11 Feedback Messages (Final App Update)</summary>
+        <div class="accordion-content">
+          <div class="feedback-block">
+            Day11 - v1.0.2: App performance excellent. All flows smooth and responsive. Great final version.
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <!-- Repeat blocks for T2–T14 -->
+        </div>
+      </details>
+    </div>
 
-			h1 {
-				font-size: 2.25rem;
-				font-weight: 700;
-				border-bottom: 3px solid var(--primary-color);
-				padding-bottom: 10px;
-				margin-bottom: 30px;
-			}
+    <div class="section">
+      <h2>Important Reminders for Testers</h2>
+      <ul>
+        <li>✅ Open the app every day for 14 days</li>
+        <li>✅ Submit feedback exactly 3 times - Day 1, Day 6, Day 11</li>
+        <li>✅ Copy and paste the exact messages - don’t change anything</li>
+        <li>✅ Use Play Store private feedback - not app reviews</li>
+        <li>✅ Update the app on Day 6 and Day 11</li>
+      </ul>
+    </div>
 
-			h2 {
-				font-size: 1.75rem;
-				font-weight: 600;
-				color: var(--primary-color);
-				margin-top: 40px;
-				display: flex;
-				align-items: center;
-			}
+    <div class="section">
+      <h2>Questions?</h2>
+      <p>If you have any problems or questions:</p>
+      <ul>
+        <li>Contact me immediately</li>
+        <li>Don't skip any days</li>
+        <li>Make sure you submit all 3 feedback messages on the correct days</li>
+      </ul>
+      <p><strong>Thank you for helping make the GCT College App better!</strong></p>
+    </div>
+  </div>
 
-			h2::before {
-				content: "";
-				width: 4px;
-				height: 24px;
-				background: var(--accent-color);
-				margin-right: 12px;
-				border-radius: 2px;
-			}
-
-			h3 {
-				font-size: 1.25rem;
-				font-weight: 600;
-				color: var(--secondary-color);
-				margin-top: 24px;
-			}
-
-			p {
-				margin-bottom: 16px;
-				color: var(--text-secondary);
-			}
-
-			.section {
-				background: var(--bg-secondary);
-				border-radius: 12px;
-				padding: 30px;
-				margin-bottom: 30px;
-				border: 1px solid var(--border-color);
-				transition: transform 0.2s ease, box-shadow 0.2s ease;
-			}
-
-			.section:hover {
-				transform: translateY(-2px);
-				box-shadow: var(--shadow-lg);
-			}
-
-			.important-note {
-				background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-				border: 1px solid #f59e0b;
-				border-radius: 8px;
-				padding: 20px;
-				margin: 20px 0;
-				color: #92400e;
-				font-weight: 500;
-			}
-
-			.important-note::before {
-				content: "⚠️ ";
-				font-size: 1.2em;
-				margin-right: 8px;
-			}
-
-			ol,
-			ul {
-				margin-left: 24px;
-				margin-bottom: 16px;
-			}
-
-			li {
-				margin-bottom: 8px;
-				color: var(--text-secondary);
-			}
-
-			.checklist-item {
-				display: flex;
-				align-items: flex-start;
-				margin-bottom: 12px;
-				padding: 12px;
-				background: rgba(59, 130, 246, 0.05);
-				border-radius: 8px;
-				border-left: 4px solid var(--accent-color);
-			}
-
-			.checklist-item .emoji {
-				margin-right: 12px;
-				font-size: 1.1em;
-			}
-
-			.message-container {
-				background: var(--bg-primary);
-				border: 2px solid var(--border-color);
-				border-radius: 12px;
-				margin: 20px 0;
-				overflow: hidden;
-				box-shadow: var(--shadow);
-			}
-
-			.message-header {
-				background: linear-gradient(
-					135deg,
-					var(--accent-color) 0%,
-					var(--primary-color) 100%
-				);
-				color: white;
-				padding: 16px 20px;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				font-weight: 600;
-			}
-
-			.message-content {
-				background: #1f2937;
-				color: #e5e7eb;
-				padding: 20px;
-				font-family: "Courier New", monospace;
-				font-size: 0.9rem;
-				line-height: 1.6;
-				white-space: pre-wrap;
-				overflow-x: auto;
-			}
-
-			.copy-btn {
-				background: rgba(255, 255, 255, 0.2);
-				border: 1px solid rgba(255, 255, 255, 0.3);
-				color: white;
-				padding: 8px 16px;
-				border-radius: 6px;
-				cursor: pointer;
-				font-size: 0.875rem;
-				font-weight: 500;
-				transition: all 0.2s ease;
-				display: flex;
-				align-items: center;
-				gap: 6px;
-			}
-
-			.copy-btn:hover {
-				background: rgba(255, 255, 255, 0.3);
-				transform: translateY(-1px);
-			}
-
-			.copy-btn.copied {
-				background: var(--success-color);
-				border-color: var(--success-color);
-			}
-
-			.copy-btn::before {
-				content: "📋";
-			}
-
-			.copy-btn.copied::before {
-				content: "✅";
-			}
-
-			.day-section {
-				background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-				border: 1px solid #0ea5e9;
-				border-radius: 12px;
-				padding: 24px;
-				margin: 20px 0;
-			}
-
-			.day-title {
-				color: #0c4a6e;
-				font-size: 1.3rem;
-				font-weight: 700;
-				margin-bottom: 16px;
-				display: flex;
-				align-items: center;
-			}
-
-			.day-title::before {
-				content: "📅";
-				margin-right: 10px;
-			}
-
-			.reminder-section {
-				background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-				border: 2px solid var(--success-color);
-				border-radius: 12px;
-				padding: 24px;
-				margin: 20px 0;
-			}
-
-			.footer {
-				background: var(--text-primary);
-				color: white;
-				padding: 30px;
-				text-align: center;
-				font-size: 0.95rem;
-			}
-
-			.toast {
-				position: fixed;
-				top: 20px;
-				right: 20px;
-				background: var(--success-color);
-				color: white;
-				padding: 12px 24px;
-				border-radius: 8px;
-				box-shadow: var(--shadow-lg);
-				transform: translateX(400px);
-				transition: transform 0.3s ease;
-				z-index: 1000;
-			}
-
-			.toast.show {
-				transform: translateX(0);
-			}
-
-			@media (max-width: 768px) {
-				body {
-					padding: 10px;
-				}
-
-				.header {
-					padding: 30px 20px;
-				}
-
-				.header h1 {
-					font-size: 2rem;
-				}
-
-				.content {
-					padding: 30px 20px;
-				}
-
-				.section {
-					padding: 20px;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<h1>Testing-Plan</h1>
-
-		<h1>GCT College App - Testing Guide</h1>
-		<p>
-			This guide explains exactly what you need to do over the next 14 days.
-		</p>
-		<p>
-			<strong>Important</strong>: You need to submit feedback exactly 3 times -
-			on Day 1, Day 6, and Day 11.
-		</p>
-
-		<div class="section">
-			<h2>How to Join the Test</h2>
-			<ol>
-				<li>
-					<strong>Click the opt-in link</strong> you received → Tap "Join the
-					test"
-				</li>
-				<li>
-					<strong>Open Google Play Store</strong> → Find "GCT College App"
-				</li>
-				<li><strong>Install the app</strong> on your phone</li>
-				<li><strong>Open the app daily</strong> for the next 14 days</li>
-			</ol>
-		</div>
-
-		<div class="section">
-			<h2>How to Submit Feedback in Play Store</h2>
-			<p>
-				<strong>Very Important</strong>: You must submit feedback through Google
-				Play Store private feedback.
-			</p>
-			<h3>Steps to Submit Feedback:</h3>
-			<ol>
-				<li>Open <strong>Google Play Store</strong></li>
-				<li>Go to the app page</li>
-				<li>
-					<strong>Scroll down</strong> until you see
-					<strong>"Private feedback to developer"</strong>
-				</li>
-				<li>Tap it</li>
-				<li><strong>Copy and paste</strong> the exact message I give you</li>
-				<li>Tap <strong>Send</strong></li>
-			</ol>
-		</div>
-
-		<div class="section">
-			<h2>What You Need to Do Each Day</h2>
-
-			<h3>DAY 1 - First Test</h3>
-			<ul>
-				<li>✅ <strong>Install the app and test it</strong></li>
-				<li>
-					✅ <strong>Submit Day-1 feedback</strong> (copy the exact message I
-					give you)
-				</li>
-			</ul>
-
-			<h3>DAYS 2-5</h3>
-			<ul>
-				<li>
-					✅ <strong>Just open the app once daily</strong> - no feedback needed
-				</li>
-			</ul>
-
-			<h3>DAY 6 - Second Test</h3>
-			<ul>
-				<li>✅ <strong>Update the app</strong> when I tell you</li>
-				<li>
-					✅ <strong>Submit Day-6 feedback</strong> (copy the exact message I
-					give you)
-				</li>
-			</ul>
-
-			<h3>DAYS 7-10</h3>
-			<ul>
-				<li>
-					✅ <strong>Just open the app once daily</strong> - no feedback needed
-				</li>
-			</ul>
-
-			<h3>DAY 11 - Final Test</h3>
-			<ul>
-				<li>✅ <strong>Update the app</strong> when I tell you</li>
-				<li>
-					✅ <strong>Submit Day-11 feedback</strong> (copy the exact message I
-					give you)
-				</li>
-			</ul>
-
-			<h3>DAYS 12-14</h3>
-			<ul>
-				<li>
-					✅ <strong>Just open the app once daily</strong> - no feedback needed
-				</li>
-			</ul>
-		</div>
-
-		<div class="section">
-			<h2>Your Exact Feedback Messages</h2>
-			<p>
-				<strong>IMPORTANT</strong>: Copy and paste these messages exactly as
-				written (You should change the device name only). Each tester gets a
-				specific message.
-			</p>
-
-			<h3>Day 1 Feedback Messages</h3>
-			<pre><code>... (T1 - T14 messages here) ...</code></pre>
-
-			<h3>Day 6 Feedback Messages (After App Update)</h3>
-			<pre><code>... (T1 - T14 messages here) ...</code></pre>
-
-			<h3>Day 11 Feedback Messages (Final App Update)</h3>
-			<pre><code>... (T1 - T14 messages here) ...</code></pre>
-		</div>
-
-		<div class="section">
-			<h2>Important Reminders for Testers</h2>
-			<ul>
-				<li>
-					✅ <strong>Open the app every day</strong> for 14 days - this is very
-					important!
-				</li>
-				<li>
-					✅ <strong>Submit feedback exactly 3 times</strong> - Day 1, Day 6,
-					Day 11
-				</li>
-				<li>
-					✅ <strong>Copy and paste the exact messages</strong> I give you -
-					don't change anything
-				</li>
-				<li>
-					✅ <strong>Use Play Store private feedback</strong> - not app reviews
-				</li>
-				<li>
-					✅ <strong>Update the app when I tell you</strong> on Day 6 and Day 11
-				</li>
-			</ul>
-		</div>
-
-		<div class="section">
-			<h2>Questions?</h2>
-			<p>If you have any problems or questions:</p>
-			<ul>
-				<li>Contact me immediately</li>
-				<li>Don't skip any days of opening the app</li>
-				<li>
-					Make sure you submit all 3 feedback messages on the correct days
-				</li>
-			</ul>
-			<p>
-				Thank you for helping make the GCT College App better! Your
-				participation is very important for getting the app approved on Google
-				Play Store.
-			</p>
-		</div>
-	</body>
+  <script>
+    function copyText(button) {
+      const text = button.parentElement.innerText.replace("Copy", "").trim();
+      navigator.clipboard.writeText(text).then(() => {
+        button.innerText = "Copied!";
+        setTimeout(() => button.innerText = "Copy", 1500);
+      });
+    }
+  </script>
+</body>
 </html>
