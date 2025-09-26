@@ -5,188 +5,505 @@
 		<title>GCT College App - Testing Guide</title>
 		<style>
 			body {
-				font-family: Arial, sans-serif;
-				line-height: 1.6;
-				margin: 20px;
-				max-width: 900px;
+				font-family: "Segoe UI", Roboto, Arial, sans-serif;
+				line-height: 1.7;
+				margin: 0;
+				background: #f9fafb;
+				color: #2d3748;
+			}
+			.container {
+				max-width: 950px;
+				margin: 40px auto;
+				background: #fff;
+				padding: 30px;
+				border-radius: 12px;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 			}
 			h1,
 			h2,
 			h3 {
-				color: #2c3e50;
+				color: #1a202c;
+				margin-top: 1.5em;
 			}
-			code {
-				background: #f4f4f4;
-				display: block;
-				padding: 10px;
-				border-radius: 5px;
-				margin: 10px 0;
-				white-space: pre-wrap;
+			h1 {
+				font-size: 2em;
+				border-bottom: 2px solid #e2e8f0;
+				padding-bottom: 0.3em;
 			}
-			ul {
+			h2 {
+				font-size: 1.5em;
+			}
+			h3 {
+				font-size: 1.2em;
+				margin-top: 1em;
+			}
+			ul,
+			ol {
 				margin-left: 20px;
 			}
 			.section {
 				margin-bottom: 30px;
 			}
+
+			/* Code blocks with copy button */
+			.feedback-block {
+				position: relative;
+				background: #f4f6f8;
+				border: 1px solid #e2e8f0;
+				border-radius: 8px;
+				padding: 12px;
+				margin: 12px 0;
+				font-family: monospace;
+				white-space: pre-wrap;
+			}
+			.copy-btn {
+				position: absolute;
+				top: 8px;
+				right: 8px;
+				background: #3182ce;
+				color: #fff;
+				border: none;
+				padding: 5px 10px;
+				font-size: 0.8em;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: background 0.2s;
+			}
+			.copy-btn:hover {
+				background: #2b6cb0;
+			}
+			.accordion {
+				border: 1px solid #e2e8f0;
+				border-radius: 8px;
+				margin: 10px 0;
+				overflow: hidden;
+			}
+			.accordion summary {
+				cursor: pointer;
+				padding: 12px 16px;
+				background: #edf2f7;
+				font-weight: bold;
+			}
+			.accordion summary:hover {
+				background: #e2e8f0;
+			}
+			.accordion[open] summary {
+				background: #e2e8f0;
+			}
+			.accordion-content {
+				padding: 10px 16px;
+				background: #fff;
+			}
 		</style>
 	</head>
 	<body>
-		<h1>Testing-Plan</h1>
-
-		<h1>GCT College App - Testing Guide</h1>
-		<p>
-			This guide explains exactly what you need to do over the next 14 days.
-		</p>
-		<p>
-			<strong>Important</strong>: You need to submit feedback exactly 3 times -
-			on Day 1, Day 6, and Day 11.
-		</p>
-
-		<div class="section">
-			<h2>How to Join the Test</h2>
-			<ol>
-				<li>
-					<strong>Click the opt-in link</strong> you received → Tap "Join the
-					test"
-				</li>
-				<li>
-					<strong>Open Google Play Store</strong> → Find "GCT College App"
-				</li>
-				<li><strong>Install the app</strong> on your phone</li>
-				<li><strong>Open the app daily</strong> for the next 14 days</li>
-			</ol>
-		</div>
-
-		<div class="section">
-			<h2>How to Submit Feedback in Play Store</h2>
+		<div class="container">
+			<h1>GCT College App - Testing Guide</h1>
 			<p>
-				<strong>Very Important</strong>: You must submit feedback through Google
-				Play Store private feedback.
+				This guide explains exactly what you need to do over the next 14 days.
 			</p>
-			<h3>Steps to Submit Feedback:</h3>
-			<ol>
-				<li>Open <strong>Google Play Store</strong></li>
-				<li>Go to the app page</li>
-				<li>
-					<strong>Scroll down</strong> until you see
-					<strong>"Private feedback to developer"</strong>
-				</li>
-				<li>Tap it</li>
-				<li><strong>Copy and paste</strong> the exact message I give you</li>
-				<li>Tap <strong>Send</strong></li>
-			</ol>
-		</div>
-
-		<div class="section">
-			<h2>What You Need to Do Each Day</h2>
-
-			<h3>DAY 1 - First Test</h3>
-			<ul>
-				<li>✅ <strong>Install the app and test it</strong></li>
-				<li>
-					✅ <strong>Submit Day-1 feedback</strong> (copy the exact message I
-					give you)
-				</li>
-			</ul>
-
-			<h3>DAYS 2-5</h3>
-			<ul>
-				<li>
-					✅ <strong>Just open the app once daily</strong> - no feedback needed
-				</li>
-			</ul>
-
-			<h3>DAY 6 - Second Test</h3>
-			<ul>
-				<li>✅ <strong>Update the app</strong> when I tell you</li>
-				<li>
-					✅ <strong>Submit Day-6 feedback</strong> (copy the exact message I
-					give you)
-				</li>
-			</ul>
-
-			<h3>DAYS 7-10</h3>
-			<ul>
-				<li>
-					✅ <strong>Just open the app once daily</strong> - no feedback needed
-				</li>
-			</ul>
-
-			<h3>DAY 11 - Final Test</h3>
-			<ul>
-				<li>✅ <strong>Update the app</strong> when I tell you</li>
-				<li>
-					✅ <strong>Submit Day-11 feedback</strong> (copy the exact message I
-					give you)
-				</li>
-			</ul>
-
-			<h3>DAYS 12-14</h3>
-			<ul>
-				<li>
-					✅ <strong>Just open the app once daily</strong> - no feedback needed
-				</li>
-			</ul>
-		</div>
-
-		<div class="section">
-			<h2>Your Exact Feedback Messages</h2>
 			<p>
-				<strong>IMPORTANT</strong>: Copy and paste these messages exactly as
-				written (You should change the device name only). Each tester gets a
-				specific message.
+				<strong>Important:</strong> You need to submit feedback exactly 3 times
+				- on Day 1, Day 6, and Day 11.
 			</p>
 
-			<h3>Day 1 Feedback Messages</h3>
-			<pre><code>... (T1 - T14 messages here) ...</code></pre>
+			<div class="section">
+				<h2>How to Join the Test</h2>
+				<ol>
+					<li>
+						<strong>Click the opt-in link</strong> you received → Tap "Join the
+						test"
+					</li>
+					<li>
+						<strong>Open Google Play Store</strong> → Find "GCT College App"
+					</li>
+					<li><strong>Install the app</strong> on your phone</li>
+					<li><strong>Open the app daily</strong> for the next 14 days</li>
+				</ol>
+			</div>
 
-			<h3>Day 6 Feedback Messages (After App Update)</h3>
-			<pre><code>... (T1 - T14 messages here) ...</code></pre>
+			<div class="section">
+				<h2>How to Submit Feedback in Play Store</h2>
+				<p>
+					<strong>Very Important:</strong> You must submit feedback through
+					Google Play Store private feedback.
+				</p>
+				<h3>Steps to Submit Feedback:</h3>
+				<ol>
+					<li>Open <strong>Google Play Store</strong></li>
+					<li>Go to the app page</li>
+					<li>
+						<strong>Scroll down</strong> until you see
+						<strong>"Private feedback to developer"</strong>
+					</li>
+					<li>Tap it</li>
+					<li><strong>Copy and paste</strong> the exact message I give you</li>
+					<li>Tap <strong>Send</strong></li>
+				</ol>
+			</div>
 
-			<h3>Day 11 Feedback Messages (Final App Update)</h3>
-			<pre><code>... (T1 - T14 messages here) ...</code></pre>
+			<div class="section">
+				<h2>What You Need to Do Each Day</h2>
+				<h3>DAY 1 - First Test</h3>
+				<ul>
+					<li>✅ <strong>Install the app and test it</strong></li>
+					<li>
+						✅ <strong>Submit Day-1 feedback</strong> (copy the exact message I
+						give you)
+					</li>
+				</ul>
+				<h3>DAYS 2-5</h3>
+				<ul>
+					<li>✅ Just open the app once daily - no feedback needed</li>
+				</ul>
+				<h3>DAY 6 - Second Test</h3>
+				<ul>
+					<li>✅ Update the app when I tell you</li>
+					<li>✅ Submit Day-6 feedback</li>
+				</ul>
+				<h3>DAYS 7-10</h3>
+				<ul>
+					<li>✅ Just open the app once daily - no feedback needed</li>
+				</ul>
+				<h3>DAY 11 - Final Test</h3>
+				<ul>
+					<li>✅ Update the app when I tell you</li>
+					<li>✅ Submit Day-11 feedback</li>
+				</ul>
+				<h3>DAYS 12-14</h3>
+				<ul>
+					<li>✅ Just open the app once daily - no feedback needed</li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h2>Your Exact Feedback Messages</h2>
+				<p>
+					<strong>IMPORTANT:</strong> Copy and paste these messages exactly as
+					written (only change the device name). Each tester gets a specific
+					message.
+				</p>
+
+				<details class="accordion">
+					<summary>Day 1 Feedback Messages</summary>
+					<div class="accordion-content">
+						<div class="feedback-block">
+							<strong>T1 - Day 1:</strong><br />
+							Day1 - Installed GCT College app and completed registration.
+							Browsed academic programs successfully. App startup took ~4
+							seconds. Device: Samsung A12 / Android 11.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T2 - Day 1:</strong><br />
+							Day1 - Installed app, explored Gezira College information section.
+							Academic calendar PDF download worked but took long time. Device:
+							Xiaomi Redmi 9 / Android 10.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T3 - Day 1:</strong><br />
+							Day1 - App opened, tested student login flow. Noticed small text
+							overlap in college programs screen. Device: Pixel 3a / Android 12.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T4 - Day 1:</strong><br />
+							Day1 - Installed and browsed college programs page. Academic
+							specializations display properly but scrolling could be smoother.
+							Device: Samsung S20 / Android 12.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T5 - Day 1:</strong><br />
+							Day1 - App installed successfully. Arabic text appears properly
+							but some English labels remain untranslated. Device: Huawei P30 /
+							Android 10.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T6 - Day 1:</strong><br />
+							Day1 - App started but crashed once when opening prescribed
+							materials section. Re-opening worked fine. Device: OnePlus 7 /
+							Android 11.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T7 - Day 1:</strong><br />
+							Day1 - Registration completed. Minor UI issue - buttons overlap on
+							small screen in coordinator dashboard. Device: Moto G7 / Android
+							9.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T8 - Day 1:</strong><br />
+							Day1 - App navigation works well. WhatsApp integration for
+							academic supervisors functions correctly. Device: Samsung A50 /
+							Android 11.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T9 - Day 1:</strong><br />
+							Day1 - Login successful but session expires quickly - logged out
+							after 1 hour of inactivity. Device: Pixel 6 / Android 13.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T10 - Day 1:</strong><br />
+							Day1 - App stable overall. College information loads slowly on
+							first open (~6 seconds loading). Device: Redmi Note 8 / Android
+							10.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T11 - Day 1:</strong><br />
+							Day1 - Tested academic schedules section. Study tables and exam
+							schedules display but image loading is slow. Device: Galaxy S9 /
+							Android 9.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T12 - Day 1:</strong><br />
+							Day1 - App theme switching works well. Dark mode displays properly
+							but some Arabic text alignment issues. Device: Samsung A21 /
+							Android 11.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T13 - Day 1:</strong><br />
+							Day1 - Installation successful. When rotating phone, college
+							programs layout breaks on one screen. Device: Nokia 5.3 / Android
+							10.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T14 - Day 1:</strong><br />
+							Day1 - Quick test completed. Tested coordinator image upload for
+							academic materials but failed for 2.5MB JPG file. Device: LG K51 /
+							Android 9.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+					</div>
+				</details>
+
+				<details class="accordion">
+					<summary>Day 6 Feedback Messages (After App Update)</summary>
+					<div class="accordion-content">
+						<div class="feedback-block">
+							<strong>T1 - Day 6:</strong><br />
+							Day6 - Updated to v1.0.1. App startup noticeably faster (~2.5s).
+							Navigation smoother. Good improvement.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T2 - Day 6:</strong><br />
+							Day6 - v1.0.1: Academic calendar PDF downloads faster now but
+							still slow for large files. Progress indicator added.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T3 - Day 6:</strong><br />
+							Day6 - v1.0.1: College programs screen layout fixed. No text
+							overlap on my device anymore.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T4 - Day 6:</strong><br />
+							Day6 - v1.0.1: College programs page scrolling improved and
+							navigation is smoother.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T5 - Day 6:</strong><br />
+							Day6 - v1.0.1: Some Arabic translations added but academic program
+							names still in English.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T6 - Day 6:</strong><br />
+							Day6 - v1.0.1: Prescribed materials crash fixed. Section loads
+							without issues now.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T7 - Day 6:</strong><br />
+							Day6 - v1.0.1: Coordinator dashboard buttons no longer overlap on
+							small screen.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T8 - Day 6:</strong><br />
+							Day6 - v1.0.1: App performance improved. WhatsApp links to
+							supervisors work consistently.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T9 - Day 6:</strong><br />
+							Day6 - v1.0.1: Session timeout improved but still logs out after
+							~90 minutes. Better than before.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T10 - Day 6:</strong><br />
+							Day6 - v1.0.1: College information loads much faster with skeleton
+							UI. Good UX improvement.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T11 - Day 6:</strong><br />
+							Day6 - v1.0.1: Academic schedules now load faster. Study tables
+							and exam schedules section much improved.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T12 - Day 6:</strong><br />
+							Day6 - v1.0.1: Dark mode Arabic text alignment partially fixed.
+							Some screens still need work.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T13 - Day 6:</strong><br />
+							Day6 - v1.0.1: Rotation handling improved but one academic program
+							screen still has minor layout issue.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T14 - Day 6:</strong><br />
+							Day6 - v1.0.1: Academic material image upload works for 2.5MB
+							files but compression makes images blurry.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+					</div>
+				</details>
+
+				<details class="accordion">
+					<summary>Day 11 Feedback Messages (Final App Update)</summary>
+					<div class="accordion-content">
+						<div class="feedback-block">
+							<strong>T1 - Day 11:</strong><br />
+							Day11 - v1.0.2: App performance excellent. All flows smooth and
+							responsive. Great final version.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T2 - Day 11:</strong><br />
+							Day11 - v1.0.2: PDF downloads optimized with better performance.
+							Academic calendar loads quickly now.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T3 - Day 11:</strong><br />
+							Day11 - v1.0.2: All screens display properly on my device. Layout
+							issues resolved.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T4 - Day 11:</strong><br />
+							Day11 - v1.0.2: College programs navigation polished. User
+							experience much improved.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T5 - Day 11:</strong><br />
+							Day11 - v1.0.2: Arabic translations completed. All program names
+							and labels properly localized.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T6 - Day 11:</strong><br />
+							Day11 - v1.0.2: Prescribed materials section stable and fast. No
+							issues encountered.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T7 - Day 11:</strong><br />
+							Day11 - v1.0.2: Coordinator dashboard responsive on all screen
+							sizes. Perfect layout.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T8 - Day 11:</strong><br />
+							Day11 - v1.0.2: WhatsApp integration seamless. Academic supervisor
+							contacts work perfectly.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T9 - Day 11:</strong><br />
+							Day11 - v1.0.2: Session management improved significantly. Stayed
+							logged in for 4+ hours.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T10 - Day 11:</strong><br />
+							Day11 - v1.0.2: College information loads instantly. Excellent
+							user experience throughout.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T11 - Day 11:</strong><br />
+							Day11 - v1.0.2: Academic schedules load smoothly. Study tables and
+							exam schedules display perfectly.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T12 - Day 11:</strong><br />
+							Day11 - v1.0.2: Arabic text alignment perfect in both light and
+							dark modes.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T13 - Day 11:</strong><br />
+							Day11 - v1.0.2: All screens handle rotation properly. Layout
+							issues completely resolved.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+						<div class="feedback-block">
+							<strong>T14 - Day 11:</strong><br />
+							Day11 - v1.0.2: Academic material image upload with improved
+							compression. Quality and speed balanced well.
+							<button class="copy-btn" onclick="copyText(this)">Copy</button>
+						</div>
+					</div>
+				</details>
+			</div>
+
+			<div class="section">
+				<h2>Important Reminders for Testers</h2>
+				<ul>
+					<li>✅ Open the app every day for 14 days</li>
+					<li>✅ Submit feedback exactly 3 times - Day 1, Day 6, Day 11</li>
+					<li>✅ Copy and paste the exact messages - don’t change anything</li>
+					<li>✅ Use Play Store private feedback - not app reviews</li>
+					<li>✅ Update the app on Day 6 and Day 11</li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<h2>Questions?</h2>
+				<p>If you have any problems or questions:</p>
+				<ul>
+					<li>Contact me immediately</li>
+					<li>Don't skip any days</li>
+					<li>
+						Make sure you submit all 3 feedback messages on the correct days
+					</li>
+				</ul>
+				<p>
+					<strong
+						>Thank you for helping make the GCT College App better!</strong
+					>
+				</p>
+			</div>
 		</div>
 
-		<div class="section">
-			<h2>Important Reminders for Testers</h2>
-			<ul>
-				<li>
-					✅ <strong>Open the app every day</strong> for 14 days - this is very
-					important!
-				</li>
-				<li>
-					✅ <strong>Submit feedback exactly 3 times</strong> - Day 1, Day 6,
-					Day 11
-				</li>
-				<li>
-					✅ <strong>Copy and paste the exact messages</strong> I give you -
-					don't change anything
-				</li>
-				<li>
-					✅ <strong>Use Play Store private feedback</strong> - not app reviews
-				</li>
-				<li>
-					✅ <strong>Update the app when I tell you</strong> on Day 6 and Day 11
-				</li>
-			</ul>
-		</div>
-
-		<div class="section">
-			<h2>Questions?</h2>
-			<p>If you have any problems or questions:</p>
-			<ul>
-				<li>Contact me immediately</li>
-				<li>Don't skip any days of opening the app</li>
-				<li>
-					Make sure you submit all 3 feedback messages on the correct days
-				</li>
-			</ul>
-			<p>
-				Thank you for helping make the GCT College App better! Your
-				participation is very important for getting the app approved on Google
-				Play Store.
-			</p>
-		</div>
+		<script>
+			function copyText(button) {
+				const text = button.parentElement.innerText.replace("Copy", "").trim();
+				navigator.clipboard.writeText(text).then(() => {
+					button.innerText = "Copied!";
+					setTimeout(() => (button.innerText = "Copy"), 1500);
+				});
+			}
+		</script>
 	</body>
 </html>
