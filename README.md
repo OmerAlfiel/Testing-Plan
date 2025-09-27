@@ -349,6 +349,13 @@ Thank you for helping make the GCT College App better! Your participation is ver
 
 ## Developer Responses to Tester Feedback
 
+---
+تم إصلاح المشاكل المذكورة في الإصدار 1.0.1:
+- تحسين الواجهة للشاشات الصغيرة
+- زيادة حد رفع الملفات إلى 5MB  
+- تحسين سرعة التطبيق
+---
+
 Here are professional developer responses to each tester's feedback, showing how to acknowledge issues and communicate fixes professionally.
 
 ### Day 1 - Developer Responses to Initial Feedback
