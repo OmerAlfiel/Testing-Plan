@@ -3,19 +3,24 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>GCT College App - Testing Guide</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<style>
+			* {
+				box-sizing: border-box;
+			}
 			body {
 				font-family: "Segoe UI", Roboto, Arial, sans-serif;
 				line-height: 1.7;
 				margin: 0;
 				background: #f9fafb;
 				color: #2d3748;
+				padding: 0;
 			}
 			.container {
 				max-width: 950px;
-				margin: 40px auto;
+				margin: 20px auto;
 				background: #fff;
-				padding: 30px;
+				padding: 20px;
 				border-radius: 12px;
 				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 			}
@@ -24,14 +29,15 @@
 			h3 {
 				color: #1a202c;
 				margin-top: 1.5em;
+				word-wrap: break-word;
 			}
 			h1 {
-				font-size: 2em;
+				font-size: 1.8em;
 				border-bottom: 2px solid #e2e8f0;
 				padding-bottom: 0.3em;
 			}
 			h2 {
-				font-size: 1.5em;
+				font-size: 1.4em;
 			}
 			h3 {
 				font-size: 1.2em;
@@ -39,10 +45,11 @@
 			}
 			ul,
 			ol {
-				margin-left: 20px;
+				margin-left: 16px;
+				padding-left: 4px;
 			}
 			.section {
-				margin-bottom: 30px;
+				margin-bottom: 25px;
 			}
 
 			/* Code blocks with copy button */
@@ -51,14 +58,18 @@
 				background: #f4f6f8;
 				border: 1px solid #e2e8f0;
 				border-radius: 8px;
-				padding: 12px;
+				padding: 12px 40px 12px 12px; /* Extra right padding for button */
 				margin: 12px 0;
-				font-family: monospace;
-				white-space: wrap;
+				font-family: "SF Mono", Monaco, "Cascadia Code", monospace;
+				font-size: 0.9em;
+				line-height: 1.5;
+				word-wrap: break-word;
+				overflow-wrap: break-word;
 			}
 			.feedback-text {
 				display: block;
 				margin-top: 5px;
+				padding-right: 8px;
 			}
 			.copy-btn {
 				position: absolute;
@@ -67,26 +78,35 @@
 				background: #3182ce;
 				color: #fff;
 				border: none;
-				padding: 5px 10px;
-				font-size: 0.8em;
+				padding: 6px 8px;
+				font-size: 0.75em;
 				border-radius: 5px;
 				cursor: pointer;
 				transition: background 0.2s;
+				min-width: 45px;
+				text-align: center;
+				font-weight: 500;
 			}
 			.copy-btn:hover {
 				background: #2b6cb0;
 			}
+			.copy-btn:active {
+				transform: translateY(1px);
+			}
 			.accordion {
 				border: 1px solid #e2e8f0;
 				border-radius: 8px;
-				margin: 10px 0;
+				margin: 15px 0;
 				overflow: hidden;
 			}
 			.accordion summary {
 				cursor: pointer;
-				padding: 12px 16px;
+				padding: 15px 16px;
 				background: #edf2f7;
 				font-weight: bold;
+				font-size: 1.1em;
+				transition: background 0.2s;
+				-webkit-tap-highlight-color: transparent;
 			}
 			.accordion summary:hover {
 				background: #e2e8f0;
@@ -95,8 +115,147 @@
 				background: #e2e8f0;
 			}
 			.accordion-content {
-				padding: 10px 16px;
+				padding: 15px 16px;
 				background: #fff;
+			}
+
+			/* Mobile Responsive Styles */
+			@media (max-width: 768px) {
+				body {
+					font-size: 16px; /* Prevent zoom on iOS */
+				}
+				.container {
+					margin: 10px;
+					padding: 15px;
+					border-radius: 8px;
+				}
+				h1 {
+					font-size: 1.6em;
+					margin-top: 0.5em;
+				}
+				h2 {
+					font-size: 1.3em;
+					margin-top: 1.2em;
+				}
+				h3 {
+					font-size: 1.1em;
+					margin-top: 0.8em;
+				}
+				.section {
+					margin-bottom: 20px;
+				}
+				.feedback-block {
+					padding: 10px 35px 10px 10px;
+					font-size: 0.85em;
+					margin: 10px 0;
+				}
+				.copy-btn {
+					top: 6px;
+					right: 6px;
+					padding: 4px 6px;
+					font-size: 0.7em;
+					min-width: 40px;
+				}
+				.accordion summary {
+					padding: 12px;
+					font-size: 1em;
+				}
+				.accordion-content {
+					padding: 12px;
+				}
+				ol,
+				ul {
+					margin-left: 12px;
+					padding-left: 0;
+				}
+				li {
+					margin-bottom: 8px;
+				}
+			}
+
+			/* Small Mobile Styles */
+			@media (max-width: 480px) {
+				.container {
+					margin: 5px;
+					padding: 12px;
+				}
+				h1 {
+					font-size: 1.4em;
+				}
+				h2 {
+					font-size: 1.2em;
+				}
+				h3 {
+					font-size: 1.05em;
+				}
+				.feedback-block {
+					padding: 8px 32px 8px 8px;
+					font-size: 0.8em;
+				}
+				.copy-btn {
+					top: 4px;
+					right: 4px;
+					padding: 3px 5px;
+					font-size: 0.65em;
+					min-width: 35px;
+				}
+				.accordion summary {
+					padding: 10px;
+					font-size: 0.95em;
+				}
+				.accordion-content {
+					padding: 10px;
+				}
+			}
+
+			/* Touch improvements */
+			@media (hover: none) and (pointer: coarse) {
+				.accordion summary {
+					padding: 16px;
+				}
+				.copy-btn {
+					padding: 8px 10px;
+					min-width: 50px;
+				}
+			}
+
+			/* Dark mode support */
+			@media (prefers-color-scheme: dark) {
+				body {
+					background: #1a202c;
+					color: #e2e8f0;
+				}
+				.container {
+					background: #2d3748;
+					box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+				}
+				h1,
+				h2,
+				h3 {
+					color: #f7fafc;
+				}
+				h1 {
+					border-bottom-color: #4a5568;
+				}
+				.feedback-block {
+					background: #4a5568;
+					border-color: #718096;
+					color: #e2e8f0;
+				}
+				.accordion {
+					border-color: #4a5568;
+				}
+				.accordion summary {
+					background: #4a5568;
+					color: #e2e8f0;
+				}
+				.accordion summary:hover,
+				.accordion[open] summary {
+					background: #718096;
+				}
+				.accordion-content {
+					background: #2d3748;
+				}
 			}
 		</style>
 	</head>
@@ -322,111 +481,110 @@
 						<div class="feedback-block">
 							<strong>T1 - Day 6:</strong>
 							<div class="feedback-text">
-								Updated to v1.0.1. App startup noticeably faster (~2.5s).
-								Navigation smoother. Good improvement.
+								App startup noticeably faster. Navigation smoother. Good
+								improvement.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T2 - Day 6:</strong>
 							<div class="feedback-text">
-								v1.0.1: Academic calendar PDF downloads faster now but still
-								slow for large files. Progress indicator added.
+								Academic calendar PDF downloads faster now but still slow for
+								large files. Progress indicator added.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T3 - Day 6:</strong>
 							<div class="feedback-text">
-								v1.0.1: College programs screen layout fixed. No text overlap on
-								my device anymore.
+								College programs screen layout fixed. No text overlap on my
+								device anymore.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T4 - Day 6:</strong>
 							<div class="feedback-text">
-								v1.0.1: College programs page scrolling improved and navigation
-								is smoother.
+								College programs page scrolling improved and navigation is
+								smoother.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T5 - Day 6:</strong>
 							<div class="feedback-text">
-								v1.0.1: Some Arabic translations added but academic program
-								names still in English.
+								Some Arabic translations added but academic program names still
+								in English.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T6 - Day 6:</strong>
 							<div class="feedback-text">
-								v1.0.1: Prescribed materials crash fixed. Section loads without
-								issues now.
+								Prescribed materials crash fixed. Section loads without issues
+								now.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T7 - Day 6:</strong>
 							<div class="feedback-text">
-								v1.0.1: Coordinator dashboard buttons no longer overlap on small
-								screen.
+								Coordinator dashboard buttons no longer overlap on small screen.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T8 - Day 6:</strong>
 							<div class="feedback-text">
-								v1.0.1: App performance improved. WhatsApp links to supervisors
-								work consistently.
+								App performance improved. WhatsApp links to supervisors work
+								consistently.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T9 - Day 6:</strong>
 							<div class="feedback-text">
-								v1.0.1: Session timeout improved but still logs out after ~90
-								minutes. Better than before.
+								Session timeout improved but still logs out after ~90 minutes.
+								Better than before.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T10 - Day 6:</strong>
 							<div class="feedback-text">
-								v1.0.1: College information loads much faster with skeleton UI.
-								Good UX improvement.
+								College information loads much faster with skeleton UI. Good UX
+								improvement.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T11 - Day 6:</strong>
 							<div class="feedback-text">
-								v1.0.1: Academic schedules now load faster. Study tables and
-								exam schedules section much improved.
+								Academic schedules now load faster. Study tables and exam
+								schedules section much improved.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T12 - Day 6:</strong>
 							<div class="feedback-text">
-								v1.0.1: Dark mode Arabic text alignment partially fixed. Some
-								screens still need work.
+								Dark mode Arabic text alignment partially fixed. Some screens
+								still need work.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T13 - Day 6:</strong>
 							<div class="feedback-text">
-								v1.0.1: Rotation handling improved but one academic program
-								screen still has minor layout issue.
+								Rotation handling improved but one academic program screen still
+								has minor layout issue.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T14 - Day 6:</strong>
 							<div class="feedback-text">
-								v1.0.1: Academic material image upload works for 2.5MB files but
+								Academic material image upload works for 2.5MB files but
 								compression makes images blurry.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
@@ -440,23 +598,23 @@
 						<div class="feedback-block">
 							<strong>T1 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: App performance excellent. All flows smooth and
-								responsive. Great final version.
+								App performance excellent. All flows smooth and responsive.
+								Great final version.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T2 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: PDF downloads optimized with better performance.
-								Academic calendar loads quickly now.
+								PDF downloads optimized with better performance. Academic
+								calendar loads quickly now.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T3 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: All screens display properly on my device. Layout issues
+								All screens display properly on my device. Layout issues
 								resolved.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
@@ -464,23 +622,23 @@
 						<div class="feedback-block">
 							<strong>T4 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: College programs navigation polished. User experience
-								much improved.
+								College programs navigation polished. User experience much
+								improved.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T5 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: Arabic translations completed. All program names and
-								labels properly localized.
+								Arabic translations completed. All program names and labels
+								properly localized.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T6 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: Prescribed materials section stable and fast. No issues
+								Prescribed materials section stable and fast. No issues
 								encountered.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
@@ -488,39 +646,39 @@
 						<div class="feedback-block">
 							<strong>T7 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: Coordinator dashboard responsive on all screen sizes.
-								Perfect layout.
+								Coordinator dashboard responsive on all screen sizes. Perfect
+								layout.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T8 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: WhatsApp integration seamless. Academic supervisor
-								contacts work perfectly.
+								WhatsApp integration seamless. Academic supervisor contacts work
+								perfectly.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T9 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: Session management improved significantly. Stayed logged
-								in for 4+ hours.
+								Session management improved significantly. Stayed logged in for
+								4+ hours.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T10 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: College information loads instantly. Excellent user
-								experience throughout.
+								College information loads instantly. Excellent user experience
+								throughout.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T11 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: Academic schedules load smoothly. Study tables and exam
+								Academic schedules load smoothly. Study tables and exam
 								schedules display perfectly.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
@@ -528,24 +686,23 @@
 						<div class="feedback-block">
 							<strong>T12 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: Arabic text alignment perfect in both light and dark
-								modes.
+								Arabic text alignment perfect in both light and dark modes.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T13 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: All screens handle rotation properly. Layout issues
-								completely resolved.
+								All screens handle rotation properly. Layout issues completely
+								resolved.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
 						<div class="feedback-block">
 							<strong>T14 - Day 11:</strong>
 							<div class="feedback-text">
-								v1.0.2: Academic material image upload with improved
-								compression. Quality and speed balanced well.
+								Academic material image upload with improved compression.
+								Quality and speed balanced well.
 							</div>
 							<button class="copy-btn" onclick="copyText(this)">Copy</button>
 						</div>
