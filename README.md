@@ -375,7 +375,7 @@ Here are professional developer responses to each tester's feedback, showing how
 
 **Response to T6:**
 
-> Thanks for reporting the crash in prescribed materials section! This is a critical issue we're addressing immediately. The crash appears related to data loading - we're implementing better error handling and offline support. Fix coming in v1.0.1.
+> Excellent catch on rotation handling! We are not targeting the rotation for this version. We will fix this soon.
 
 **Response to T7:**
 
@@ -461,7 +461,7 @@ Here are professional developer responses to each tester's feedback, showing how
 
 **Response to T13:**
 
-> Great! Rotation handling improvements are working. The remaining academic program screen issue is noted - we're implementing comprehensive orientation handling for all nested screens in v1.0.2.
+> Great! Rotation handled. The remaining academic program screen issue is noted - we're implementing comprehensive orientation handling for all nested screens in v1.0.2.
 
 **Response to T14:**
 
